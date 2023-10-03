@@ -23,9 +23,14 @@ classi precedute da .debug per la gestione degli spazi
 
 .debug header .top-menu > *,
 .debug header .jumbotron .content,
-main .section .row > div,
-main .section .row-big > div {
+.debug main .section .row > div,
+.debug main .section .row-big > div,
+.debug footer .row > div {
   border: 2px dashed black;
+}
+
+.debug footer .row .col-big .col {
+  border: 2px dashed white;
 }
 
 .debug header .jumbotron .content {
@@ -38,6 +43,10 @@ main .section .row-big > div {
 
 .debug main .section .row-big .col-full {
   height: 940px;
+}
+
+.debug footer .row {
+  height: 600px;
 }
 
 /*
@@ -56,6 +65,11 @@ Common
 
 .container.medium {
   max-width: 950px;
+}
+
+.row,
+.row-big {
+  display: flex;
 }
 
 /*
@@ -152,3 +166,27 @@ main .section .row-big .col-full {
 Footer
 ************
 */
+
+footer {
+  /* background-color: #23272a; */
+  background-color: #daa520;
+  padding-top: 10px;
+}
+
+footer .footer-top {
+  margin-bottom: 40px;
+}
+
+footer .footer-top .col-small {
+  background-color: #f08080;
+  width: 30%;
+}
+footer .footer-top .col-big {
+  background-color: #20b2aa;
+  width: 70%;
+  display: flex;
+}
+
+footer .footer-top .col-big .col {
+  flex-grow: 1;
+}
