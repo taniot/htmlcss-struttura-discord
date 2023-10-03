@@ -17,17 +17,57 @@ classi precedute da .debug per la gestione degli spazi
 ************
 */
 
+.debug header .top-menu > * {
+  border: 2px dashed black;
+}
+
 /*
 ************
 Common
 ************
 */
 
+.container {
+  margin: 0 auto;
+}
+
+.container.big {
+  max-width: 1250px;
+}
+
 /*
 ************
 Header
 ************
 */
+
+header .topbar {
+  background-color: #add8e6;
+  padding: 15px;
+}
+
+header .top-menu {
+  background-color: #daa520;
+  display: flex;
+}
+
+header .top-menu > * {
+  padding: 10px;
+}
+
+header .top-menu .header-logo,
+header .top-menu .header-login {
+  width: 20%;
+}
+
+header .top-menu .header-link {
+  width: 60%;
+  text-align: center;
+}
+
+header .top-menu .header-login {
+  text-align: right;
+}
 
 /*
 ************
