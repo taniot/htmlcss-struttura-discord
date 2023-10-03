@@ -22,12 +22,22 @@ classi precedute da .debug per la gestione degli spazi
 */
 
 .debug header .top-menu > *,
-.debug header .jumbotron .content {
+.debug header .jumbotron .content,
+main .section .row > div,
+main .section .row-big > div {
   border: 2px dashed black;
 }
 
 .debug header .jumbotron .content {
   height: 415px;
+}
+
+.debug main .section .row {
+  height: 525px;
+}
+
+.debug main .section .row-big .col-full {
+  height: 940px;
 }
 
 /*
@@ -104,6 +114,38 @@ header .jumbotron .content {
 Main
 ************
 */
+
+main .section {
+  padding: 50px;
+}
+
+main .section:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+main .section .row,
+main .section .row-big {
+  display: flex;
+}
+
+main .section .row .col-big {
+  background-color: #1e90ff;
+  width: 60%;
+}
+
+main .section .row .col-small {
+  background-color: #ffc0cb;
+  width: 40%;
+}
+
+main .section .row-big .col-full {
+  background-color: #228b22;
+  flex-grow: 1;
+}
+
+/* .bg-section {
+  background-color: #d3d3d3;
+} */
 
 /*
 ************
