@@ -4,6 +4,10 @@ Reset
 ************
 */
 
+:root {
+  --bg-topbar: #abd7e6;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +21,13 @@ classi precedute da .debug per la gestione degli spazi
 ************
 */
 
-.debug header .top-menu > * {
+.debug header .top-menu > *,
+.debug header .jumbotron .content {
   border: 2px dashed black;
+}
+
+.debug header .jumbotron .content {
+  height: 415px;
 }
 
 /*
@@ -35,14 +44,24 @@ Common
   max-width: 1250px;
 }
 
+.container.medium {
+  max-width: 950px;
+}
+
 /*
 ************
 Header
 ************
 */
 
+header {
+  border-bottom: 4px solid var(--bg-topbar);
+}
+
+/* topbar */
+
 header .topbar {
-  background-color: #add8e6;
+  background-color: var(--bg-topbar);
   padding: 15px;
 }
 
@@ -67,6 +86,17 @@ header .top-menu .header-link {
 
 header .top-menu .header-login {
   text-align: right;
+}
+
+/* jumbotron */
+
+header .jumbotron {
+  background-color: #00008b;
+  padding: 50px;
+}
+
+header .jumbotron .content {
+  background-color: #ee82ee;
 }
 
 /*
